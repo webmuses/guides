@@ -1,23 +1,24 @@
 ---
 layout: default
-title: Setup recipe for Rails Girls
+title: Przygotowanie do Rails Girls
 permalink: install
 ---
 
-# Setup recipe for Rails Girls
-<span class="muted">Cooking time: 5min active / 15-30min passive</span>
+# Przygotowanie do Rails Girls
+<span class="muted">Czas przygotania: 5 minut konfiguracji / 15-30 minut instalacji</span>
 
-To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
+Aby zacząć budować aplikacje internetowe z Ruby on Rails, potrzebujemy przygotować środowisko i zainstalować kilka rzeczy.
 
-Follow the instructions for your operating system. If you hit into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
+Podążaj za instrukcją odpowiednią dla Twojego systemu operacyjnego. Jeśli napotkasz problemy, nie panikuj ;-) Poproś o pomoc najbliższego coacha.
 
-* [Setup for OS X](#setup_for_os_x)
-* [Setup for Windows](#setup_for_windows)
-* [Setup for Linux](#setup_for_linux)
+* [Instrukcja dla OS X](#instrukcja_dla_os_x)
+* [Instrukcja dla Windowsa](#instrukcja_dla_windowsa)
+* [Instrukcja dla Linuksa](#instrukcja_dla_linuksa)
 
 <hr />
 
-## Setup for OS X
+## <a name="instrukcja_dla_os_x"> Instrukcja dla OS X </a>
+
 
 **Step 1.** Let&#8217;s check the version of the operating system.
 
@@ -109,7 +110,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
 
-## Setup for Windows
+## <a name="instrukcja_dla_windowsa"> Instrukcja dla Windowsa </a>
 
 Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) and run it. Click through the installer using the default options.
 
@@ -135,7 +136,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
 
-## Setup for Linux
+## <a name="instrukcja_dla_linuksa"> Instrukcja dla Linuksa </a>
 
 To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
 
