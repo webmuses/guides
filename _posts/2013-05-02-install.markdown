@@ -5,9 +5,9 @@ permalink: instalacja
 ---
 
 # Przygotowanie do Rails Girls
-<span class="muted">Czas przygotania: 5 minut konfiguracji / 15-30 minut instalacji</span>
+<span class="muted">Czas przygotowania: 5 minut konfiguracji / 15-30 minut instalacji</span>
 
-Aby zacząć budować aplikacje internetowe z Ruby on Rails, potrzebujemy przygotować środowisko i zainstalować kilka rzeczy.
+Aby zacząć budować aplikacje internetowe z Ruby on Rails potrzebujemy przygotować środowisko i zainstalować kilka rzeczy.
 
 Podążaj za instrukcją odpowiednią dla Twojego systemu operacyjnego. Jeśli napotkasz problemy, nie panikuj ;-) Poproś o pomoc najbliższego coacha.
 
@@ -20,52 +20,52 @@ Podążaj za instrukcją odpowiednią dla Twojego systemu operacyjnego. Jeśli n
 ## <a name="instrukcja_dla_os_x"> Instrukcja dla OS X </a>
 
 
-**Step 1.** Let&#8217;s check the version of the operating system.
+**Krok 1.** Na początek sprawdźmy wersję systemu operacyjnego.
 
-Click the Apple menu and choose *About this Mac*.
+Kliknij na Apple menu i wybierz *About this Mac*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-**Step 2.** In the window you will find the version of your operating system. If your version number starts with 10.6, 10.7, 10.8 or 10.9 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+**Krok 2.** W nowym oknie zobaczysz wersję swojego systemu operacyjnego. Jeśli numer wersji zaczyna się od 10.6, 10.7, 10.8 lub 10.9 to ta instrukcja jest dla Ciebie. W przeciwnym wypadku środowisko przygotujemy podczas wydarzenia.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-**Step 3-A.** Download the RailsInstaller for your version of OS X (For 10.6, 10.7 or 10.8):
+**Krok 3-A.** Ściągnij RailsInstaller dla swojej wersji OS X (dotyczy wersji 10.6, 10.7 lub 10.8):
 
-* [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
-* [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
+* [RailsInstaller dla 10.7 lub 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
+* [RailsInstaller dla 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
 
-Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.3-osx-10.7.app' or 'RailsInstaller-1.0.3-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
+Kliknij dwukrotnie na pobrany plik, aby rozpakował się do aktualnego katalogu. Kliknij dwukrotnie na nowo rozpakowane 'RailsInstaller-1.0.3-osx-10.7.app' lub 'RailsInstaller-1.0.3-osx-10.6.app' i podążaj za instrukcjami. Zostanie otwarty plik README z tytułem 'Rails Installer OS X' na górze. Możesz **zignorować** instrukcje z tego pliku.
 
-If the Rails version wasn't latest, you could update it using a following command on terminal.
+Jeśli zainstalowana wersja Rails nie jest najowsza, możemy to zrobić wpisując poniższe polecenie w terminalu.
 
 {% highlight sh %}
 gem update rails --no-ri --no-rdoc
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
+Upewnij się, że wszystko działa w porządku uruchamiając następujące polecenie w terminalu.
 
 {% highlight sh %}
 rails new railsgirls
 {% endhighlight %}
 
-**Step 3-B.** Install with rbenv (For 10.9):
+**Krok 3-B.** Instalacja za pomocą rbenv (dla 10.9):
 
-If your version number starts with 10.9, follow these steps. We are installing homebrew and rbenv.
+Jeśli wersja Twojego systemu operacyjnego zaczyna się od 10.9, wykonaj kolejno kroki.
 
-3-B-1. Install Command line tools on terminal:
+**Krok 3-B-1.** Zainstaluj **Command line tools** w terminalu.
 
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
 
-3-B-2. Install [Homebrew](http://brew.sh/):
+**Krok 3-B-2.** Zainstaluj [Homebrew](http://brew.sh/):
 
 {% highlight sh %}
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 {% endhighlight %}
 
-3-B-3. Install [rbenv](https://github.com/sstephenson/rbenv):
+**Krok 3-B-3.** Zainstaluj [rbenv](https://github.com/sstephenson/rbenv):
 
 {% highlight sh %}
 brew update
@@ -75,38 +75,36 @@ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 {% endhighlight %}
 
-3-B-4. Build Ruby with rbenv:
-
-You can find newest Ruby version with a command "rbenv install -l".
+**Krok 3-B-4.** Zainstaluj Rubiego za pomocą rbenv:
 
 {% highlight sh %}
 rbenv install 2.1.0
 {% endhighlight %}
 
-If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try this way.
+Najnowszą wersję Rubiego znajdziesz przy pomocy polecenia `rbenv install -l`.
+
+Jeśli pojawia Ci się błąd "OpenSSL::SSL::SSLError: ... : certificate verify failed" spróbuj wykonać polecenie.
 
 {% highlight sh %}
 brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-3-B-5. Set default Ruby:
+**Krok 3-B-5.** Ustaw domyślną wersję Rubiego:
 
 {% highlight sh %}
 rbenv global 2.1.0
 {% endhighlight %}
 
-3-B-6. Install rails:
+**Krok 3-B-6.** Zainstaluj Ruby on Rails:
 
 {% highlight sh %}
-gem i rails
+gem install rails
 {% endhighlight %}
 
-**Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 2](http://www.sublimetext.com/2)
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
 
 <hr />
 
