@@ -38,17 +38,17 @@ Firefox, Safari, Chrome lub inna będzie nam służyć do obejrzenia Twojej apli
 
 Niezwykle istotne jest, aby wybierać instrukcje zadedykowane systemowi operacyjnemu którego używasz. Polecenia, które będzie trzeba wpisać na komputerze operującym na Windowsie różnią się nieznacznie od tych dla Maca czy Linuxa. Jeżeli nie jesteś pewna, czy instrukcje są odpowiednie dla Twojego systemu, sprawdź przyciski widoczne na dole pod poleceniami.
 
-## *1.*Creating the application
+## *1.*Tworzenie aplikacji
 
-We're going to create a new Rails app called *railsgirls*.
+Stworzymy teraz nową aplikację w Railsach, która będzie się nazywać *railsgirls*.
 
-First, let's open a terminal:
+Najpierw otwórzmy terminal:
 
-* Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
-* Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
-* Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
+* Mac OS X: Otwórz Spotlight, wpisz *Terminal*, a następnie kliknij na aplikację *Terminal*.
+* Windows: Naciśnij przycisk Start i wyszukaj *Command Prompt*, następnie wybierz *Command Prompt with Ruby on Rails*.
+* Linux (Ubuntu/Fedora): Wyszukaj *Terminal* przy pomocy Dasha, następnie kliknij na *Terminal*.
 
-Next, type these commands in the terminal:
+Wwpisz następujące polecenie w terminalu:
 
 <div class="os-specific">
   <div class="nix">
@@ -57,7 +57,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-You can verify that a directory named <code>projects</code> was created by running the list command: <code>ls</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:
+Zauważ, że katalog o nazwie <code>projects</code> został utworzony przy użyciu polecenia: <code>ls</code>. Powinnaś teraz widzieć katalog  <code>projects</code> na wyjściu. Teraz zmieńmy folder w którym się obecnie znajdujesz na <code>projects</code>. Potrzebna nam do tego komenda to:
     </div>
 
 {% highlight sh %}
@@ -65,15 +65,15 @@ cd projects
 {% endhighlight %}
 
     <div>
-You can verify you are now in an empty directory or folder by again running the <code>ls</code> command. Now you want to create a new app called <code>railsgirls</code> by running:
-    </div>
 
+    </div>
+Możesz teraz sprawdzić, że znajdujesz się w pustym folderze/katalogu poprzez ponowne użycie polecenia <code>ls</code>. Następnie stwórzmy nową aplikację, którą nazwiemy <code>railsgirls</code>. W tym celu wpisz:
 {% highlight sh %}
 rails new railsgirls
 {% endhighlight %}
 
     <div>
-This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:
+Powyższe polecenie stworzy nową aplikację wewnątrz folderu <code>railsgirls</code>. W związku z tym musimy ponownie zmienić folder, aby znaleźć się wewnątrz naszej aplikacji, przy użyciu:
     </div>
 
 {% highlight sh %}
@@ -81,7 +81,7 @@ cd railsgirls
 {% endhighlight %}
 
     <div>
-If you run <code>ls</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:
+Jeżeli wpiszesz <code>ls</code> wewnątrz katalogu, powinnaś zobaczyć foldery o nazwach <code>app</code> i <code>config</code>. Wtedy możesz włączyć serwer rails wpisując polecenia:
     </div>
 
 {% highlight sh %}
