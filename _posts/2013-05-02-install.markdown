@@ -110,27 +110,23 @@ Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
 
 ## <a name="instrukcja_dla_windowsa"> Instrukcja dla Windowsa </a>
 
-Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) and run it. Click through the installer using the default options.
+Pobierz [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) i uruchom. Przejdź kolejne kroki instalatora z domyślnymi ustawieniami.
 
-If the Rails version wasn't latest, you could update it using a following command on "Command Prompt with Ruby on Rails".
+Jeśli zainstalowana wersja Rails nie jest najowsza, uruchom *Command Prompt with Ruby on Rails* i wpisz poniższe polecenie.
 
 {% highlight sh %}
 gem update rails --no-ri --no-rdoc
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
+Upewnij się, że wszystko działa w porządku uruchamiając następujące polecenie.
 
 {% highlight sh %}
 rails new railsgirls
 {% endhighlight %}
 
-Installation of Git and SSH-keys is required if you want to [put your app online with Heroku](/heroku).
+**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 2](http://www.sublimetext.com/2)
 
-**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
-
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
 
 <hr />
 
