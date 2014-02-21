@@ -83,7 +83,7 @@ rbenv install 2.1.0
 
 Najnowszą wersję Rubiego znajdziesz przy pomocy polecenia `rbenv install -l`.
 
-Jeśli pojawia Ci się błąd "OpenSSL::SSL::SSLError: ... : certificate verify failed" spróbuj wykonać polecenie.
+Jeśli pojawia Ci się błąd "OpenSSL::SSL::SSLError: ... : certificate verify failed" wykonaj polecenie.
 
 {% highlight sh %}
 brew install curl-ca-bundle
@@ -132,31 +132,29 @@ Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
 
 ## <a name="instrukcja_dla_linuksa"> Instrukcja dla Linuksa </a>
 
-To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+Aby zainstalować środowisko do pracy z Ruby on Rails skopiuj linijkę niżej odpowiednio dla Twojej dystrybucji linuksowej (Ubuntu lub Fedora), wklej do terminal i wciśnij Enter. Instalacja może zająć dłuższą chwilę.
 
-**For Ubuntu:**
+**Dla Ubuntu:**
 
 {% highlight sh %}
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-**For Fedora:**
+**Dla Fedory:**
 
 {% highlight sh %}
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
+Upewnij się, że wszystko działa w porządku uruchamiając następujące polecenie.
 
 {% highlight sh %}
 rails new railsgirls
 {% endhighlight %}
 
-**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 2](http://www.sublimetext.com/2)
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
 
 <hr />
 
