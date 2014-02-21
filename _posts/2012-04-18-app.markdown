@@ -48,7 +48,7 @@ Najpierw otwórzmy terminal:
 * Windows: Naciśnij przycisk Start i wyszukaj *Command Prompt*, następnie wybierz *Command Prompt with Ruby on Rails*.
 * Linux (Ubuntu/Fedora): Wyszukaj *Terminal* przy pomocy Dasha, następnie kliknij na *Terminal*.
 
-Wwpisz następujące polecenie w terminalu:
+Wpisz następujące polecenie w terminalu:
 
 <div class="os-specific">
   <div class="nix">
@@ -57,7 +57,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-Zauważ, że katalog o nazwie <code>projects</code> został utworzony przy użyciu polecenia: <code>ls</code>. Powinnaś teraz widzieć katalog  <code>projects</code> na wyjściu. Teraz zmieńmy folder w którym się obecnie znajdujesz na <code>projects</code>. Potrzebna nam do tego komenda to:
+Zauważ, że katalog o nazwie <code>projects</code> został utworzony przy użyciu polecenia: <code>ls</code>. Powinnaś teraz widzieć katalog <code>projects</code> na wyjściu. Przejdźmy do folderu <code>projects</code>. Potrzebna nam do tego komenda to:
     </div>
 
 {% highlight sh %}
@@ -67,13 +67,13 @@ cd projects
     <div>
 
     </div>
-Możesz teraz sprawdzić, że znajdujesz się w pustym folderze/katalogu poprzez ponowne użycie polecenia <code>ls</code>. Następnie stwórzmy nową aplikację, którą nazwiemy <code>railsgirls</code>. W tym celu wpisz:
+Możesz teraz upewnić się, że znajdujesz się w pustym folderze/katalogu poprzez ponowne użycie polecenia <code>ls</code>. Następnie stwórzmy nową aplikację, którą nazwiemy <code>railsgirls</code>. W tym celu wpisz:
 {% highlight sh %}
 rails new railsgirls
 {% endhighlight %}
 
     <div>
-Powyższe polecenie stworzy nową aplikację wewnątrz folderu <code>railsgirls</code>. W związku z tym musimy ponownie zmienić folder, aby znaleźć się wewnątrz naszej aplikacji, przy użyciu:
+W ten sposób utworzy się nowa aplikacja wewnątrz folderu <code>railsgirls</code>. Musimy więc ponownie zmienić folder, aby znaleźć się wewnątrz naszej aplikacji:
     </div>
 
 {% highlight sh %}
@@ -81,7 +81,7 @@ cd railsgirls
 {% endhighlight %}
 
     <div>
-Jeżeli wpiszesz <code>ls</code> wewnątrz katalogu, powinnaś zobaczyć foldery o nazwach <code>app</code> i <code>config</code>. Wtedy możesz włączyć serwer rails wpisując polecenia:
+Jeżeli wpiszesz teraz <code>ls</code> wewnątrz katalogu, powinnaś zobaczyć foldery o nazwach <code>app</code> i <code>config</code>. Wtedy możesz włączyć serwer rails przy użyciu poleceń:
     </div>
 
 {% highlight sh %}
@@ -95,7 +95,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-You can verify that a directory named <code>projects</code> was created by running the list command: <code>dir</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:
+Możesz teraz zauważyć, że katalog <code>projects</code> został stworzony za pomocą polecenia: <code>dir</code>. Powinnaś widzieć teraz folder <code>projects</code> na wyjściu. Przejdźmy do folderu <code>projects</code> za pomocą:
     </div>
 
 {% highlight sh %}
@@ -103,7 +103,7 @@ cd projects
 {% endhighlight %}
 
     <div>
-You can verify you are now in an empty directory or folder by again running the <code>dir</code> command. Now you want to create a new app called <code>railsgirls</code> by running:
+Możesz sprawdzić, że znajdujesz się w pustym folderze za pomocą komendy <code>dir</code>. Teraz chcemy stworzyć nową aplikację o nazwie <code>railsgirls</code>. Użyjemy do tego następującego polecenia:
     </div>
 
 {% highlight sh %}
@@ -111,7 +111,7 @@ rails new railsgirls
 {% endhighlight %}
 
     <div>
-This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:
+To utworzy nową aplikację w folderze <code>railsgirls</code>, więc chcemy wejść do naszej aplikacji, znowu używając komendy:
     </div>
 
 {% highlight sh %}
@@ -119,7 +119,7 @@ cd railsgirls
 {% endhighlight %}
 
     <div>
-If you run <code>dir</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:
+Jeżeli wpiszesz teraz <code>dir</code> wewnątrz katalogu, powinnaś zobaczyć takie foldery jak <code>app</code> i <code>config</code>. Wtedy możesz włączyć serwer rails przy użyciu:
     </div>
 
 {% highlight sh %}
@@ -128,7 +128,7 @@ ruby bin\rails server
   </div>
 </div>
 
-**Windows users:** You may need to replace `bin\rails` with `script\rails`, depending on the version of Rails you have installed.
+**Dla Windowsa:** Możliwe, że będziesz musiała zastąpić `bin\rails` na `script\rails`, w zależności od tego którą wersję Rails masz zainstalowaną.
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
