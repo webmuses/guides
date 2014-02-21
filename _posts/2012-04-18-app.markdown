@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Rails Girls App Tutorial
-permalink: app
+permalink: aplikacja
 ---
 
-# Rails Girls App Tutorial
+# Aplikacja Rails Girls
 
 *Autor: Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
-**Upewnij się, że masz zainstalowane Ruby on Rails.** [**Zobacz przewodnik instalacji**](/instalacja).
+**Upewnij się, że masz zainstalowane Ruby on Rails. Jeśli nie, [**zobacz przewodnik instalacji**](/instalacja).**
 
 
 ## Poznaj narzędzia
@@ -17,26 +17,26 @@ permalink: app
 
 <h3><i class="icon-text-editor">&nbsp;</i></h3>
 
-<h3>Edytor tekstowy</h3>
+<h3>Edytor tekstu</h3>
 
 <p><a href="http://www.sublimetext.com/2">Sublime Text 2</a>, <a href="http://komodoide.com/komodo-edit">Komodo Edit</a>, Vim, Emacs, and Gedit są przykładami edytorów tekstowych, w których możesz pisać i edytować kod.</p>
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
-<h3>Terminal (Wiersz polecenia na systemie Windows)</h3>
+<h3>Terminal (w systemie Windows zwany Wierszem polecenia)</h3>
 
 Program, w którym uruchomisz rails server i wykonasz polecenia.
 
 <h3><i class="icon-browser">&nbsp;</i></h3>
 
 <h3>Przeglądarka internetowa</h3>
-Firefox, Safari, Chrome lub inna do obejrzenia Twojej aplikacji.
+Firefox, Safari, Chrome lub inna będzie nam służyć do obejrzenia Twojej aplikacji.
 
 </div>
 
-### Important
+### Uwaga!
 
-It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
+Niezwykle istotne jest, aby wybierać instrukcje zadedykowane systemowi operacyjnemu którego używasz. Polecenia, które będzie trzeba wpisać na komputerze operującym na Windowsie różnią się nieznacznie od tych dla Maca czy Linuxa. Jeżeli nie jesteś pewna, czy instrukcje są odpowiednie dla Twojego systemu, sprawdź przyciski widoczne na dole pod poleceniami.
 
 ## *1.*Creating the application
 
