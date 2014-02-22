@@ -278,75 +278,75 @@ Upewnij się, że zapisałaś plik, a następnie odśwież przeglądarkę i zoba
 **Coach:** Powiedz nieco więcej o CSSie i layoutach.
 
 
-## Step 4: Adding picture uploads
+## Krok 4:  Dodanie  ładowarki obrazków 
 
-We need to install a piece of software to let us upload files in Rails.
+Potrzebujemy zainstalować troszeczkę oprogramowania, które pozwoli nam załadowywać pliki w Rails.
 
-Open `Gemfile` in the project directory using your text editor and under the line
+Otwórz `Gemfile` w pliku project przy użyciu Twojego edytora tekstu. Pod linijką
 
 {% highlight ruby %}
 gem 'sqlite3'
 {% endhighlight %}
 
-add
+dodaj
 
 {% highlight ruby %}
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
+**Coach:** Wyjaśnij czym są biblioteki i dlaczego są użyteczne. Opisz czym jest oprogramowanie bazujące na open source(ang. otwarte/ogólnodostępne źródło).
 
-In the terminal run:
+W terminalu wpisz:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-Now we can generate the code for handling uploads. In the terminal run:
+Teraz możemy wgenerować kod odpowiedzialny za załadowywanie. W terminalu wpisz:
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
 
-At this point you need to **restart the Rails server process** in the terminal.
+W tym momencie musisz **zrestartować wszystkie procesy na serwerze Rails** przy użyciu terminala.
 
-Hit `CTRL-C` in the terminal to quit the server. Once it has stopped, you can press the up arrow to get to the last command entered, then hit enter to start the server again.
+Naciśnij `CTRL-C` w terminalu w celu wyłączenia serweru. Po zatrzymaniu możesz wcisnąć strzałkę w górę żeby wyświetlić ostatnio używanego polecena. Następnie naciśnij enter żeby ponownie otworzyć serwer.
 
-This is needed for the app to load the added library.
+Jest to niezbędne, aby aplikacja załadowała dodaną przez nas bibliotekę.
 
-Open `app/models/idea.rb` and under the line
+Otwórz `app/models/idea.rb`, gdzie pod linijką
 
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
 {% endhighlight %}
 
-add
+dodaj
 
 {% highlight ruby %}
 mount_uploader :picture, PictureUploader
 {% endhighlight %}
 
-Open `app/views/ideas/_form.html.erb` and change
+Otwórz `app/views/ideas/_form.html.erb` i zmień
 
 {% highlight erb %}
 <%= f.text_field :picture %>
 {% endhighlight %}
 
-to
+na
 
 {% highlight erb %}
 <%= f.file_field :picture %>
 {% endhighlight %}
 
-Sometimes, you might get an *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
+Czasami może Ci się pokazać *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
 
-If this happens, in file `app/views/ideas/_form.html.erb` change the line
+W takim przypadku w pliku `app/views/ideas/_form.html.erb` zmień linijkę
 
 {% highlight erb %}
 <%= form_for(@idea) do |f| %>
 {% endhighlight %}
 
-to
+na
 
 {% highlight erb %}
 <%= form_for @idea, :html => {:multipart => true} do |f| %>
