@@ -405,12 +405,12 @@ get "pages/info"
 
 Teraz możesz śmiało otworzyć plik `app/views/pages/info.html.erb` i dodać informacje o sobie używając HTMLa. Następnie wejdź w swojej przeglądarce na stronę [http://localhost:3000/pages/info](http://localhost:3000/pages/info) żeby zobaczyć rezultaty.
 
-## What next?
+## Co dalej?
 
-* Add design using HTML &amp; CSS
-* Add ratings
-* Use CoffeeScript (or JavaScript) to add interaction
-* Add picture resizing to make loading the pictures faster
+* Ulepsz wygląd używając HTML &amp; CSS
+* Dodaj statystyki/oceny
+* Użyj CoffeeScriptu (albo JavaScriptu) w celu zrobienia bardziej interaktywnej strony
+* Dodaj kompreser obrazków, aby usprawnić ładowanie zdjęć.
 
 
 ## Additional Guides
