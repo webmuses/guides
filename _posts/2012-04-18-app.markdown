@@ -371,39 +371,39 @@ Teraz odśwież przeglądarkę i zobacz co się zmieniło.
 **Coach:** Powiedz trochę o HTML.
 
 
-## Step 5: Finetune the routes
+## Krok 5: Dostosowywanie ścieżek
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+Jeśli spróbujesz otworzyć stronę [http://localhost:3000](http://localhost:3000) ciągle będzie ona pokazywać "Welcome aboard". Zróbmy na niej przekierowanie na naszą stronę z ideas.
 
-Open `config/routes.rb` and after the first line add
+Otwórz `config/routes.rb` i po pierwszej linijce kodu dodaj
 
 {% highlight ruby %}
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
+Przetestuj zmianę otwierając root path czyli ścieżkę główną (http://localhost:3000/) w swojej przeglądarce.
 
-**Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
+**Coach:** Powiedz nieco więcej o ścieżkach. Nie zapomnij wspomnieć o kolejności (dostępu do/wybierania) ścieżek i ich relacji ze statycznymi plikami.
 
-**Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
+**Rails 3:** Musisz usunąć index.html z folderu `/public/` żeby zadziałało.
 
-## Create static page in your app
+## Stwórz statyczną stronę w swojej aplikacji
 
-Lets add a static page to our app that will hold information about the author of this application — you!
+Dodajmy statyczną stronę do aplikacji, na której będziemy trzymać informacje o autorze tej aplikacji — Tobie!
 
 {% highlight sh %}
 rails generate controller pages info
 {% endhighlight %}
 
-This command will create you a new folder under `app/views` called `/pages` and under that a file called `info.html.erb` which will be your info page.
+To polecenie utworzy w pliku `app/views` nowy folder o nazwie `/pages`. Następnie wewnątrz nowego pliku (`/pages`) utworzy jeszcze jeden o nazwie `info.html.erb`, który będzie zawierał dane na Twoją stronę.
 
-It also adds a new simple route to your routes.rb.
+Oprócz tego polecenie to doda nową, prostą ścieżkę do routes.rb.
 
 {% highlight ruby %}
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
+Teraz możesz śmiało otworzyć plik `app/views/pages/info.html.erb` i dodać informacje o sobie używając HTMLa. Następnie wejdź w swojej przeglądarce na stronę [http://localhost:3000/pages/info](http://localhost:3000/pages/info) żeby zobaczyć rezultaty.
 
 ## What next?
 
