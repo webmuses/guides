@@ -258,7 +258,7 @@ przed `</body>` dodaj
 {% highlight html %}
 <footer>
   <div class="container">
-    Rails Girls 2013
+    Rails Girls 2014
   </div>
 </footer>
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
@@ -310,7 +310,7 @@ rails generate uploader Picture
 
 W tym momencie musisz **zrestartować wszystkie procesy na serwerze Rails** przy użyciu terminala.
 
-Naciśnij `CTRL-C` w terminalu w celu wyłączenia serweru. Po zatrzymaniu możesz wcisnąć strzałkę w górę żeby wyświetlić ostatnio używanego polecena. Następnie naciśnij enter żeby ponownie otworzyć serwer.
+Naciśnij `CTRL-C` w terminalu w celu wyłączenia serweru. Po zatrzymaniu możesz wcisnąć strzałkę w górę żeby wyświetlić ostatnie użyte polecenie. Następnie naciśnij enter żeby ponownie otworzyć serwer.
 
 Jest to niezbędne, aby aplikacja załadowała dodaną przez nas bibliotekę.
 
@@ -409,7 +409,7 @@ Teraz możesz śmiało otworzyć plik `app/views/pages/info.html.erb` i dodać i
 
 * Ulepsz wygląd używając HTML &amp; CSS
 * Dodaj statystyki/oceny
-* Użyj CoffeeScriptu (albo JavaScriptu) w celu zrobienia bardziej interaktywnej strony
+* Użyj CoffeeScriptu (albo JavaScriptu) w celu zrobienia strony bardziej interaktywnej.
 * Dodaj kompreser obrazków, aby usprawnić ładowanie zdjęć.
 
 
