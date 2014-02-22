@@ -91,4 +91,4 @@ następnie usuń
 </div>
 {% endhighlight %}
 
-To wszystko. Teraz podziwiaj ideas które stworzyłeś w swojej aplikacji, a zaraz za nimi powinna pojawić się pożliwość komentowania ich.
+To wszystko. Teraz podziwiaj ideas które stworzyłaś w swojej aplikacji, a zaraz za nimi powinna pojawić się możliwość komentowania ich.
