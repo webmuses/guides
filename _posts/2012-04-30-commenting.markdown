@@ -3,39 +3,39 @@ layout: default
 title: Commenting functionality for the Rails Girls app
 permalink: commenting
 ---
-# Commenting for Rails Girls App
+# Dodawanie komentarzy w aplikacji Rails Girls
 *Created by Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
 
-We are going to add the possibility to comment on ideas in your *railsgirls* application.
+Dodamy teraz możliwość dodawania komentarzy do ideas w Twojej aplikacji *railsgirls*.
 
-The instructions for installing rails and building the ideas app can be found [here](/app)
+Jak zainstalować Ruby on Rails i stworzyć aplikację o której mowa dowiesz się [tutaj](/app)
 
-## Step 1: Create comment scaffold
+## Krok 1: Stwórz scaffold komentarzy (comment scaffold)
 
-Create a comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (idea_id).
+Stwórz scaffold dla komentarzy, zawierający imie komentującego, body komentarza (tekst/zawartość komentarza) z odniesieniem do tabelki ideas (idea_id).
 {% highlight sh %}
 rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
 
-## Step 2: Add relations to models
+## Krok 2: Dodaj relacje do modeli
 
-You need to make sure that Rails knows the relation between objects (ideas and comments). 
-As one idea can have many comments we need to make sure the idea model knows that. 
-Open app/models/idea.rb and after the row
+Musisz się upewnić, że Railsy znają relację pomiędzy obiektami (ideas i comments). 
+Jedno idea może mieć wiele komentarzy (comments), więc musimy się upewnić, że model o tym wie. 
+Otwórz app/models/idea.rb i po 
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
 {% endhighlight %}
-add
+dodaj
 {% highlight ruby %}
 has_many :comments
 {% endhighlight %}
 
-The comment also has to know that it belongs to an idea. So open app/models/comment.rb and after
+Comment też musi wiedzieć, że przynależy do jednego idea. Otwórz więc app/models/comment.rb i po
 {% highlight ruby %}
 class Comment < ActiveRecord::Base
 {% endhighlight %}
 
-add the row
+dodaj
 {% highlight ruby %}
 belongs_to :idea
 {% endhighlight %}
