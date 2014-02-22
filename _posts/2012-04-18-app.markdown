@@ -130,9 +130,9 @@ ruby bin\rails server
 
 **Dla Windowsa:** Możliwe, że będziesz musiała zastąpić `bin\rails` na `script\rails`, w zależności od tego którą wersję Rails masz zainstalowaną.
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
+Otwórz [http://localhost:3000](http://localhost:3000) w swojej przeglądarce. Powinnaś zobaczyć tam stronę "Welcome aboard". Jeśli ją widzisz, oznacza to, że Twoja aplikacja została poprawnie wygenerowana.
 
-Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
+Zauważ, że w tym oknie Wiersz Poleceń jest niewidoczny, poniewasz znajdujesz się teraz na serwerze Rails. Wiersz poleceń powinien wyglądać teraz w ten sposób:
 
 <div class="os-specific">
   <div class="nix">
@@ -147,11 +147,11 @@ $
   </div>
 </div>
 
-When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
+Kiedy wiersz poleceń jest niewidoczny nie możesz wykonywać nowych poleceń. Jeżeli spróbujesz teraz wpisać `cd` lub jakieś inne polecenie - nie zadziała. Aby powrócić do normalnego wiersza poleceń:
 
-Hit `CTRL-C` in the terminal to quit the server.
+Naciśnij `CTRL-C` w terminalu aby wyłączyć serwer.
 
-**Coach:** Explain what each command does. What was generated? What does the server do?
+**Coach:** Wyjaśnij co robią poszczególne polecenia. Co zostało wygenerowane? Za co odpowiada serwer?
 
 
 ## *2.*Create Idea scaffold
