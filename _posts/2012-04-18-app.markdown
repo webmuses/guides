@@ -197,32 +197,32 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
 Hit `CTRL-C` to quit the server again when you've clicked around a little.
 
 
-## *3.*Design
+## *3.*Design (ang. projekt, wygląd)
 
-**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+**Coach:** Omów związek pomiędzy HTMLem a Rails. Za jaką część wyglądu jest odpowiedzialny HTML, a za jaką Embedded (ang. zagnieżdżony/osadzony) Ruby (ERB)? Czym jest MVC i jaki ma z tym związek? (Modele i kontrolery są odpowiedzialne za generowanie wyglądu HTML.)
 
-The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
+Aplikacja nie wygląda jeszcze najlepiej. Czas coś z tym zrobić. Użyjemy projektu Twitter Bootstrap, żeby szybko otrzymać ładny wygląd.
 
-Open `app/views/layouts/application.html.erb` in your text editor and above the line
+Otwórz `app/views/layouts/application.html.erb` w swoim edytorze tekstowym i nad linijką
 
 {% highlight erb %}
 <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 {% endhighlight %}
 
-add
+dodaj
 
 {% highlight erb %}
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css" />
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css" />
 {% endhighlight %}
 
-and replace
+następnie zamień
 
 {% highlight erb %}
 <%= yield %>
 {% endhighlight %}
 
-with
+na
 
 {% highlight erb %}
 <div class="container">
@@ -230,7 +230,7 @@ with
 </div>
 {% endhighlight %}
 
-Let's also add a navigation bar and footer to the layout. In the same file, under `<body>` add
+Dodajmy też nawigację i stopkę. W tym samym pliku, pod `<body>` dodaj
 
 {% highlight html %}
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -253,7 +253,7 @@ Let's also add a navigation bar and footer to the layout. In the same file, unde
 </nav>
 {% endhighlight %}
 
-and before `</body>` add
+przed `</body>` dodaj
 
 {% highlight html %}
 <footer>
@@ -264,7 +264,7 @@ and before `</body>` add
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
 {% endhighlight %}
 
-Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
+Zmieńmy też wygląd tabelki z ideas. Otwórz `app/assets/stylesheets/application.css` i dodaj na dole
 
 {% highlight css %}
 body { padding-top: 100px; }
@@ -273,9 +273,9 @@ table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 {% endhighlight %}
 
-Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
+Upewnij się, że zapisałaś plik, a następnie odśwież przeglądarkę i zobacz co się zmieniło. Możesz pozmieniać więcej za pomocą HTML & CSS.
 
-**Coach:** Talk a little about CSS and layouts.
+**Coach:** Powiedz nieco więcej o CSSie i layoutach.
 
 
 ## Step 4: Adding picture uploads
