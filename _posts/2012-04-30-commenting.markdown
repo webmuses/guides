@@ -40,14 +40,14 @@ dodaj
 belongs_to :idea
 {% endhighlight %}
 
-## Step 3: Render the comment form and existing comments
+## Krok 3: Wyświetl komentarze
 
-Open app/views/ideas/show.html and after the image_tag
+Otwórz app/views/ideas/show.html i za image_tag
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
 
-add
+dodaj
 {% highlight erb %}
 <h3>Comments</h3>
 <% @idea.comments.each do |comment| %>
@@ -60,17 +60,17 @@ add
 <%= render 'comments/form' %>
 {% endhighlight %}
 
-In app/controllers/ideas_controller.rb add to show action after the row
+W app/controllers/ideas_controller.rb dodaj po
 {% highlight ruby %}
 @idea = Idea.find(params[:id])
 {% endhighlight %}
 
-this
+następujący kod
 {% highlight ruby %}
 @comment = @idea.comments.build
 {% endhighlight %}
 
-Open app/views/comments/_form.html and after
+Otwórz app/views/comments/_form.html i po
 {% highlight erb %}
   <div class="field">
     <%= f.label :body %><br />
@@ -78,12 +78,12 @@ Open app/views/comments/_form.html and after
   </div>
 {% endhighlight %}
 
-add the row
+dodaj
 {% highlight erb %}
 <%= f.hidden_field :idea_id %>
 {% endhighlight %}
 
-next, remove
+następnie usuń
 {% highlight erb %}
 <div class="field">
   <%= f.label :idea_id %><br>
@@ -91,4 +91,4 @@ next, remove
 </div>
 {% endhighlight %}
 
-That's it. Now view an idea you have inserted to your application and there you should see the form for inserting a comment
+To wszystko. Teraz podziwiaj ideas które stworzyłeś w swojej aplikacji, a zaraz za nimi powinna pojawić się pożliwość komentowania ich.
