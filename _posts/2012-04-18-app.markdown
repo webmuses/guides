@@ -352,23 +352,23 @@ na
 <%= form_for @idea, :html => {:multipart => true} do |f| %>
 {% endhighlight %}
 
-In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
+Dodaj nowe idea z obrazkiem przy użyciu swojej przeglądarki. Kiedy załadujesz obrazek nie wygląda on ładnie ponieważ wyświetla się jedynie ścieżka do pliku. Naprawmy to.
 
-Open `app/views/ideas/show.html.erb` and change
+Otwórz `app/views/ideas/show.html.erb` i zamień
 
 {% highlight erb %}
 <%= @idea.picture %>
 {% endhighlight %}
 
-to
+na
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
 
-Now refresh your browser to see what changed.
+Teraz odśwież przeglądarkę i zobacz co się zmieniło.
 
-**Coach:** Talk a little about HTML.
+**Coach:** Powiedz trochę o HTML.
 
 
 ## Step 5: Finetune the routes
