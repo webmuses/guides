@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rails Girls App Tutorial
+title: Aplikacja Rails Girls
 permalink: aplikacja
 ---
 
