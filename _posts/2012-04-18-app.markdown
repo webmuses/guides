@@ -50,101 +50,43 @@ Najpierw otwórzmy terminal:
 
 Wpisz następujące polecenie w terminalu:
 
-<div class="os-specific">
-  <div class="nix">
 {% highlight sh %}
 mkdir projects
 {% endhighlight %}
 
-    <div>
 Aby sprawdzić, że katalog o nazwie <code>projects</code> został utworzony, wykonaj polecenie: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdźmy do folderu <code>projects</code> za pomocą polecenia:
-    </div>
 
 {% highlight sh %}
 cd projects
 {% endhighlight %}
 
-    <div>
-
-    </div>
 Możesz teraz upewnić się, że znajdujesz się w pustym folderze/katalogu poprzez ponowne użycie polecenia <code>ls</code>. Następnie stwórzmy nową aplikację, którą nazwiemy <code>railsgirls</code>. W tym celu wpisz:
 {% highlight sh %}
 rails new railsgirls
 {% endhighlight %}
 
-    <div>
 W ten sposób utworzy się nowa aplikacja wewnątrz folderu <code>railsgirls</code>. Musimy więc ponownie zmienić folder, aby znaleźć się wewnątrz naszej aplikacji:
-    </div>
 
 {% highlight sh %}
 cd railsgirls
 {% endhighlight %}
 
-    <div>
 Jeżeli wpiszesz teraz <code>ls</code> wewnątrz katalogu, powinnaś zobaczyć foldery o nazwach <code>app</code> i <code>config</code>. Wtedy możesz włączyć serwer rails przy użyciu poleceń:
-    </div>
 
+<div>
 {% highlight sh %}
 rails server
 {% endhighlight %}
-  </div>
-
-  <div class="win">
-{% highlight sh %}
-mkdir projects
-{% endhighlight %}
-
-    <div>
-Możesz teraz zauważyć, że katalog <code>projects</code> został stworzony za pomocą polecenia: <code>dir</code>. Powinnaś widzieć teraz folder <code>projects</code> na wyjściu. Przejdźmy do folderu <code>projects</code> za pomocą:
-    </div>
-
-{% highlight sh %}
-cd projects
-{% endhighlight %}
-
-    <div>
-Możesz sprawdzić, że znajdujesz się w pustym folderze za pomocą komendy <code>dir</code>. Teraz chcemy stworzyć nową aplikację o nazwie <code>railsgirls</code>. Użyjemy do tego następującego polecenia:
-    </div>
-
-{% highlight sh %}
-rails new railsgirls
-{% endhighlight %}
-
-    <div>
-To utworzy nową aplikację w folderze <code>railsgirls</code>, więc chcemy wejść do naszej aplikacji, znowu używając komendy:
-    </div>
-
-{% highlight sh %}
-cd railsgirls
-{% endhighlight %}
-
-    <div>
-Jeżeli wpiszesz teraz <code>dir</code> wewnątrz katalogu, powinnaś zobaczyć takie foldery jak <code>app</code> i <code>config</code>. Wtedy możesz włączyć serwer rails przy użyciu:
-    </div>
-
-{% highlight sh %}
-ruby bin\rails server
-{% endhighlight %}
-  </div>
 </div>
-
-**Dla Windowsa:** Możliwe, że będziesz musiała zastąpić `bin\rails` na `script\rails`, w zależności od tego którą wersję Rails masz zainstalowaną.
 
 Otwórz [http://localhost:3000](http://localhost:3000) w swojej przeglądarce. Powinnaś zobaczyć tam stronę "Welcome aboard". Jeśli ją widzisz, oznacza to, że Twoja aplikacja została poprawnie wygenerowana.
 
 Zauważ, że w tym oknie Wiersz Poleceń jest niewidoczny, poniewasz znajdujesz się teraz na serwerze Rails. Wiersz poleceń powinien wyglądać teraz w ten sposób:
 
-<div class="os-specific">
-  <div class="nix">
+<div>
 {% highlight sh %}
 $
 {% endhighlight %}
-  </div>
-  <div class="win">
-{% highlight sh %}
->
-{% endhighlight %}
-  </div>
 </div>
 
 Kiedy wiersz poleceń jest niewidoczny nie możesz wykonywać nowych poleceń. Jeżeli spróbujesz teraz wpisać `cd` lub jakieś inne polecenie - nie zadziała. Aby powrócić do normalnego wiersza poleceń:
@@ -160,36 +102,19 @@ We're going to use Rails' scaffold functionality to generate a starting point th
 
 **Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
 
-<div class="os-specific">
-  <div class="nix">
+<div>
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
-  </div>
-
-  <div class="win">
-{% highlight sh %}
-rails generate scaffold idea name:string description:text picture:string
-{% endhighlight %}
-  </div>
 </div>
 
 The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
 
-<div class="os-specific">
-  <div class="nix">
+<div>
 {% highlight sh %}
 rake db:migrate
 rails server
 {% endhighlight %}
-  </div>
-
-  <div class="win">
-{% highlight sh %}
-rake db:migrate
-ruby bin\rails server
-{% endhighlight %}
-  </div>
 </div>
 
 Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
@@ -197,9 +122,9 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
 Hit `CTRL-C` to quit the server again when you've clicked around a little.
 
 
-## *3.*Design (ang. projekt, wygląd)
+## *3.*Wygląd
 
-**Coach:** Omów związek pomiędzy HTMLem a Rails. Za jaką część wyglądu jest odpowiedzialny HTML, a za jaką Embedded (ang. zagnieżdżony/osadzony) Ruby (ERB)? Czym jest MVC i jaki ma z tym związek? (Modele i kontrolery są odpowiedzialne za generowanie wyglądu HTML.)
+**Coach:** Omów związek pomiędzy HTMLem a Rails. Za jaką część wyglądu jest odpowiedzialny HTML, a za jaką ERB? Czym jest MVC i jaki ma z tym związek?
 
 Aplikacja nie wygląda jeszcze najlepiej. Czas coś z tym zrobić. Użyjemy projektu Twitter Bootstrap, żeby szybko otrzymać ładny wygląd.
 
@@ -275,14 +200,14 @@ th { border-bottom: 1px solid #DDD !important; }
 
 Upewnij się, że zapisałaś plik, a następnie odśwież przeglądarkę i zobacz co się zmieniło. Możesz pozmieniać więcej za pomocą HTML & CSS.
 
-**Coach:** Powiedz nieco więcej o CSSie i layoutach.
+**Coach:** Powiedz nieco więcej o CSS i layoutach.
 
 
-## Krok 4:  Dodanie  ładowarki obrazków 
+## Krok 4: Dodanie obrazków
 
 Potrzebujemy zainstalować troszeczkę oprogramowania, które pozwoli nam załadowywać pliki w Rails.
 
-Otwórz `Gemfile` w pliku project przy użyciu Twojego edytora tekstu. Pod linijką
+Otwórz `Gemfile` w swoim projekcie przy użyciu Twojego edytora tekstu. Pod linijką
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -294,7 +219,7 @@ dodaj
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:** Wyjaśnij czym są biblioteki i dlaczego są użyteczne. Opisz czym jest oprogramowanie bazujące na open source(ang. otwarte/ogólnodostępne źródło).
+**Coach:** Wyjaśnij czym są biblioteki i dlaczego są użyteczne. Opisz czym jest oprogramowanie bazujące na _open source_.
 
 W terminalu wpisz:
 
