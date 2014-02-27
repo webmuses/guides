@@ -57,7 +57,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-Zauważ, że katalog o nazwie <code>projects</code> został utworzony przy użyciu polecenia: <code>ls</code>. Powinnaś teraz widzieć katalog <code>projects</code> na wyjściu. Przejdźmy do folderu <code>projects</code>. Potrzebna nam do tego komenda to:
+Aby sprawdzić, że katalog o nazwie <code>projects</code> został utworzony, wykonaj polecenie: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdźmy do folderu <code>projects</code> za pomocą polecenia:
     </div>
 
 {% highlight sh %}
