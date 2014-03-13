@@ -19,7 +19,7 @@ permalink: aplikacja
 
 <h3>Edytor tekstu</h3>
 
-<p><a href="http://www.sublimetext.com/2">Sublime Text 2</a>, <a href="http://komodoide.com/komodo-edit">Komodo Edit</a>, Vim, Emacs, and Gedit są przykładami edytorów tekstowych, w których możesz pisać i edytować kod.</p>
+<p><a href="http://www.sublimetext.com/2">Sublime Text 2</a>, <a href="http://komodoide.com/komodo-edit">Komodo Edit</a>, Vim, Emacs lub Gedit są przykładami edytorów tekstowych, w których możesz pisać i edytować kod.</p>
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
@@ -33,10 +33,6 @@ Program, w którym uruchomisz rails server i wykonasz polecenia.
 Firefox, Safari, Chrome lub inna będzie nam służyć do obejrzenia Twojej aplikacji.
 
 </div>
-
-### Uwaga!
-
-Niezwykle istotne jest, aby wybierać instrukcje zadedykowane systemowi operacyjnemu którego używasz. Polecenia, które będzie trzeba wpisać na komputerze operującym na Windowsie różnią się nieznacznie od tych dla Maca czy Linuxa. Jeżeli nie jesteś pewna, czy instrukcje są odpowiednie dla Twojego systemu, sprawdź przyciski widoczne na dole pod poleceniami.
 
 ## *1.*Tworzenie aplikacji
 
