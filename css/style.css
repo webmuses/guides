@@ -275,3 +275,14 @@ i.icon-small-browser {
     background:none;
   }
 }
+
+.home li.pull-left {
+  float: left;
+  width: 50%;
+  border-bottom: none;
+}
+
+.home li.clear {
+  clear: both;
+  border-top: 1px solid #ddd;
+}
