@@ -50,7 +50,7 @@ Wpisz następujące polecenie w terminalu:
 mkdir projects
 {% endhighlight %}
 
-Aby sprawdzić, że katalog o nazwie <code>projects</code> został utworzony, wykonaj polecenie: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdźmy do folderu <code>projects</code> za pomocą polecenia:
+Aby sprawdzić czy katalog o nazwie <code>projects</code> został utworzony, wykonaj polecenie: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdźmy do folderu <code>projects</code> za pomocą polecenia:
 
 {% highlight sh %}
 cd projects
@@ -94,7 +94,7 @@ Naciśnij `CTRL-C` w terminalu aby wyłączyć serwer.
 
 ## *2.*Scaffold
 
-W naszej aplikacji skorzystamy ze scaffoldu, aby wygenerować potrzebne rzeczy do wyświetlania listy, dodawania, usuwania, edytowania i oglądania poszczególnych pomysłów.
+W naszej aplikacji skorzystamy ze scaffoldu, aby wygenerować potrzebne rzeczy do wyświetlania listy, dodawania, usuwania, edytowania i przeglądania poszczególnych pomysłów.
 
 **Coach:** Wyjaśnij co to jest scaffold? (Wyjaśnij polecenie, nazwę modelu i związanej tabeli w bazie danych, sposób nazywania, itd.) Do czego służa migracje i dlaczego są potrzebne?
 
@@ -201,7 +201,7 @@ Upewnij się, że zapisałaś plik, a następnie odśwież przeglądarkę i zoba
 **Coach:** Powiedz nieco więcej o CSS i layoutach.
 
 
-## Krok 4: Dodanie obrazków
+## Krok 4: Dodawanie obrazków
 
 Potrzebujemy zainstalować troszeczkę oprogramowania, które pozwoli nam załadowywać pliki w Rails.
 
@@ -330,10 +330,10 @@ Teraz możesz śmiało otworzyć plik `app/views/pages/info.html.erb` i dodać i
 
 ## Co dalej?
 
-* Ulepsz wygląd używając HTML &amp; CSS
-* Dodaj statystyki/oceny
-* Użyj CoffeeScriptu (albo JavaScriptu) w celu zrobienia bardziej interaktywnej strony
-* Dodaj kompresję obrazków, aby usprawnić ładowanie zdjęć
+* Ulepsz wygląd używając HTML &amp; CSS.
+* Dodaj statystyki/oceny.
+* Użyj CoffeeScriptu (albo JavaScriptu) w celu zrobienia bardziej interaktywnej strony.
+* Dodaj kompresję obrazków, aby usprawnić ładowanie zdjęć.
 
 
 ## Dodatkowe przewodniki (w języku angielskim)
