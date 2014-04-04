@@ -50,7 +50,7 @@ Wpisz następujące polecenie:
 mkdir projects
 {% endhighlight %}
 
-Aby sprawdzić czy katalog o nazwie <code>projects</code> został utworzony użyj polecenia: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdźmy do folderu <code>projects</code> wpisując:
+Aby sprawdzić czy katalog o nazwie <code>projects</code> został utworzony użyj polecenia: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdź do folderu <code>projects</code> wpisując:
 
 {% highlight sh %}
 cd projects
@@ -85,11 +85,11 @@ Po powrocie do okienka z wierszem poleceń (konsolą/terminalem) spróbuj ponown
 
 ## *2.*Scaffold
 
-W naszej aplikacji skorzystamy ze scaffoldu, aby wygenerować potrzebne rzeczy do wyświetlania listy, dodawania, usuwania, edytowania i przeglądania poszczególnych pomysłów.
+W naszej aplikacji skorzystamy ze scaffoldu, aby wygenerować rzeczy potrzebne do wyświetlania listy, dodawania, usuwania, edytowania i przeglądania poszczególnych pomysłów.
 
 **Coach:** Wyjaśnij co to jest scaffold? (Wyjaśnij polecenie, nazwę modelu i związanej tabeli w bazie danych, sposób nazywania, itd.) Do czego służa migracje i dlaczego są potrzebne?
 
-Wykonajmy polecenie:
+Wokonaj polecenie:
 
 <div>
 {% highlight sh %}
@@ -97,7 +97,7 @@ rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
 </div>
 
-Scaffold tworzy nowe pliki w naszej aplikacji, ale żeby wszystko działało poprawnie, potrzebujemy wykonać jeszcze dwa dodatkowe polecenia - pierwsze zaktualizuje naszą bazę danych, a drugie uruchomi serwer aplikacji.
+Scaffold stworzy wszystkie potrzebne pliki w naszej aplikacji, ale żeby wszystko działało poprawnie, musisz jeszcze wykonać dwa dodatkowe polecenia. Pierwsze zaktualizuje naszą bazę danych, drugie uruchomi serwer aplikacji.
 
 <div>
 {% highlight sh %}
@@ -106,16 +106,16 @@ rails server
 {% endhighlight %}
 </div>
 
-Otwórz [http://localhost:3000/ideas](http://localhost:3000/ideas) w przeglądarce. Poklikaj po stronie, aby zobaczyć, co nowego pojawiło się w naszej aplikacji.
+Otwórz [http://localhost:3000/ideas](http://localhost:3000/ideas) w przeglądarce. Poklikaj po stronie, aby zobaczyć, co nowego pojawiło się w Twojej aplikacji.
 
-Wciśnij `CTRL-C`, aby zakończyć działanie serwera.
+Wróć do wiersza poleceń i naciśnij `CTRL-C`, aby zakończyć działanie serwera.
 
 
 ## *3.*Wygląd
 
-**Coach:** Omów związek pomiędzy HTML a Rails. Jaką częścią widoków jest HTML i co to jest ERB? Czym jest MVC i jaki ma z tym związek?
+**Coach:** Omów związek pomiędzy HTML a Rails. Wyjaśnij jak działa ERB i co ma wspólnego z HTML-em? Czym jest MVC?
 
-Aplikacja nie wygląda jeszcze najlepiej. Czas coś z tym zrobić. Użyjemy projektu Twitter Bootstrap, żeby szybko otrzymać ładny wygląd.
+Stworzona aplikacja nie jest jeszcze zbyt ładna. Czas coś z tym zrobić. Użyjemy projektu Twitter Bootstrap, żeby szybko otrzymać ładny (albo przynajmniej ładniejszy) wygląd.
 
 Otwórz `app/views/layouts/application.html.erb` w swoim edytorze tekstowym i nad linijką
 
@@ -130,7 +130,7 @@ dodaj
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css" />
 {% endhighlight %}
 
-następnie zamień
+Następnie zamień
 
 {% highlight erb %}
 <%= yield %>
@@ -144,7 +144,7 @@ na
 </div>
 {% endhighlight %}
 
-Dodajmy też nawigację i stopkę. W tym samym pliku, pod `<body>` dodaj
+Czas na nawigację i stopkę. W tym samym pliku, pod `<body>`, dodaj
 
 {% highlight html %}
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -167,7 +167,7 @@ Dodajmy też nawigację i stopkę. W tym samym pliku, pod `<body>` dodaj
 </nav>
 {% endhighlight %}
 
-przed `</body>` dodaj
+oraz przed `</body>` dodaj
 
 {% highlight html %}
 <footer>
@@ -178,7 +178,7 @@ przed `</body>` dodaj
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
 {% endhighlight %}
 
-Zmieńmy też wygląd tabelki z ideas. Otwórz `app/assets/stylesheets/application.css` i dodaj na dole
+Zmień też wygląd tabelki z ideas. Otwórz `app/assets/stylesheets/application.css` i dodaj na dole
 
 {% highlight css %}
 body { padding-top: 100px; }
@@ -191,12 +191,11 @@ Upewnij się, że zapisałaś plik, a następnie odśwież przeglądarkę i zoba
 
 **Coach:** Powiedz nieco więcej o CSS i layoutach.
 
-
 ## Krok 4: Dodawanie obrazków
 
-Potrzebujemy zainstalować troszeczkę oprogramowania, które pozwoli nam załadowywać pliki w Rails.
+Aby przejść dalej, musimy najpierw doinstalować rzeczy, które pozwolą nam załadowywać pliki w Rails.
 
-Otwórz `Gemfile` w swoim projekcie przy użyciu Twojego edytora tekstu. Pod linijką
+Otwórz `Gemfile` w swoim projekcie przy użyciu edytora tekstu. Pod linijką
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -216,19 +215,19 @@ W terminalu wpisz:
 bundle
 {% endhighlight %}
 
-Teraz możemy wgenerować kod odpowiedzialny za załadowywanie. W terminalu wpisz:
+Teraz możesz wgenerować kod odpowiedzialny za dodawanie obrazków. W terminalu wpisz:
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
 
-W tym momencie musisz **zrestartować wszystkie procesy na serwerze Rails** przy użyciu terminala.
+W tym momencie musisz **zrestartować serwer Rails** przy użyciu terminala.
 
-Naciśnij `CTRL-C` w terminalu w celu wyłączenia serweru. Po zatrzymaniu możesz wcisnąć strzałkę w górę żeby wyświetlić ostatnie użyte polecenie. Następnie naciśnij enter żeby ponownie otworzyć serwer.
+Naciśnij `CTRL-C` w terminalu w celu wyłączenia serweru. Po zatrzymaniu możesz wcisnąć strzałkę w górę żeby wyświetlić ostatnie użyte polecenie. Następnie naciśnij enter żeby ponownie włączyć serwer.
 
 Jest to niezbędne, aby aplikacja załadowała dodaną przez nas bibliotekę.
 
-Otwórz `app/models/idea.rb`, gdzie pod linijką
+Otwórz `app/models/idea.rb`. Pod linijką
 
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
@@ -252,9 +251,9 @@ na
 <%= f.file_field :picture %>
 {% endhighlight %}
 
-Czasami może Ci się pokazać *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
+Może się zdarzyć, że po odświeżeniu strony zobaczysz komunikat *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
 
-W takim przypadku w pliku `app/views/ideas/_form.html.erb` zmień linijkę
+W takim przypadku, w pliku `app/views/ideas/_form.html.erb` zmień linijkę
 
 {% highlight erb %}
 <%= form_for(@idea) do |f| %>
@@ -266,7 +265,7 @@ na
 <%= form_for @idea, :html => {:multipart => true} do |f| %>
 {% endhighlight %}
 
-Dodaj nowe idea z obrazkiem przy użyciu swojej przeglądarki. Kiedy załadujesz obrazek nie wygląda on ładnie ponieważ wyświetla się jedynie ścieżka do pliku. Naprawmy to.
+Dodaj nowe idee z obrazkami przy użyciu swojej przeglądarki. Kiedy załadujesz obrazek, zobaczysz jedynie dziwną ścieżkę do pliku a nie prawdziwy obrazek.
 
 Otwórz `app/views/ideas/show.html.erb` i zamień
 
@@ -284,7 +283,6 @@ Teraz odśwież przeglądarkę i zobacz co się zmieniło.
 
 **Coach:** Powiedz trochę o HTML.
 
-
 ## Krok 5: Dostosowywanie ścieżek
 
 Jeśli spróbujesz otworzyć stronę [http://localhost:3000](http://localhost:3000) ciągle będzie ona pokazywać "Welcome aboard". Zróbmy na niej przekierowanie na naszą stronę z ideas.
@@ -295,7 +293,7 @@ Otwórz `config/routes.rb` i po pierwszej linijce kodu dodaj
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-Przetestuj zmianę otwierając root path czyli ścieżkę główną (http://localhost:3000/) w swojej przeglądarce.
+Przetestuj zmianę otwierając stronę główną (http://localhost:3000/) w swojej przeglądarce.
 
 **Coach:** Powiedz nieco więcej o ścieżkach. Nie zapomnij wspomnieć o kolejności (dostępu do/wybierania) ścieżek i ich relacji ze statycznymi plikami.
 
@@ -303,21 +301,21 @@ Przetestuj zmianę otwierając root path czyli ścieżkę główną (http://loca
 
 ## Krok 6: Stwórz statyczną stronę w swojej aplikacji
 
-Dodajmy statyczną stronę do aplikacji, na której będziemy trzymać informacje o autorze tej aplikacji — Tobie!
+Dodajmy nową stronę do aplikacji, gdzie będziemy trzymać informacje o autorze tej aplikacji — Tobie!
 
 {% highlight sh %}
 rails generate controller pages info
 {% endhighlight %}
 
-To polecenie utworzy w pliku `app/views` nowy folder o nazwie `/pages`. Następnie wewnątrz nowego pliku (`/pages`) utworzy jeszcze jeden o nazwie `info.html.erb`, który będzie zawierał dane na Twoją stronę.
+To polecenie utworzy w pliku `app/views` nowy folder o nazwie `/pages`. Następnie wewnątrz nowego pliku (`/pages`) utworzy jeszcze jeden o nazwie `info.html.erb`, w którym wkrótce dodasz informacje o sobie.
 
-Oprócz tego polecenie to doda nową, prostą ścieżkę do routes.rb.
+Oprócz tego, polecenie to doda nowy wpis do routes.rb.
 
 {% highlight ruby %}
 get "pages/info"
 {% endhighlight %}
 
-Teraz możesz śmiało otworzyć plik `app/views/pages/info.html.erb` i dodać informacje o sobie używając HTMLa. Następnie wejdź w swojej przeglądarce na stronę [http://localhost:3000/pages/info](http://localhost:3000/pages/info) żeby zobaczyć rezultaty.
+Teraz możesz śmiało otworzyć plik `app/views/pages/info.html.erb` i dodać informacje o sobie używając HTMLa. Następnie wejdź na stronę [http://localhost:3000/pages/info](http://localhost:3000/pages/info) żeby zobaczyć rezultaty.
 
 ## Co dalej?
 
@@ -325,7 +323,6 @@ Teraz możesz śmiało otworzyć plik `app/views/pages/info.html.erb` i dodać i
 * Dodaj statystyki/oceny.
 * Użyj CoffeeScriptu (albo JavaScriptu) w celu zrobienia bardziej interaktywnej strony.
 * Dodaj kompresję obrazków, aby usprawnić ładowanie zdjęć.
-
 
 ## Dodatkowe przewodniki (w języku angielskim)
 
