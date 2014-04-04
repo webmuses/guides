@@ -7,18 +7,39 @@ permalink: instalacja
 # Przygotowanie do Rails Girls
 <span class="muted">Czas przygotowania: 5 minut konfiguracji / 15-30 minut instalacji</span>
 
-Aby zacząć budować aplikacje internetowe z Ruby on Rails potrzebujemy przygotować środowisko i zainstalować kilka rzeczy.
+Aby zacząć budować aplikacje internetowe z Ruby on Rails musimy najpierw przygotować środowisko i zainstalować kilka rzeczy.
 
 Podążaj za instrukcją odpowiednią dla Twojego systemu operacyjnego. Jeśli napotkasz problemy, nie panikuj ;-) Poproś o pomoc najbliższego coacha.
 
-* [Instrukcja dla OS X](#instrukcja_dla_os_x)
 * [Instrukcja dla Windowsa](#instrukcja_dla_windowsa)
+* [Instrukcja dla OS X](#instrukcja_dla_os_x)
 * [Instrukcja dla Linuksa](#instrukcja_dla_linuksa)
 
 <hr />
 
-## <a name="instrukcja_dla_os_x"> Instrukcja dla OS X </a>
+## <a name="instrukcja_dla_windowsa"> Instrukcja dla Windowsa </a>
 
+Pobierz [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) i uruchom. Przejdź kolejne kroki instalatora z domyślnymi ustawieniami.
+
+Jeśli zainstalowana wersja Rails nie jest najowsza, uruchom *Command Prompt with Ruby on Rails* i wpisz poniższe polecenie.
+
+{% highlight sh %}
+gem update rails --no-ri --no-rdoc
+{% endhighlight %}
+
+Upewnij się, że wszystko działa w porządku uruchamiając następujące polecenie.
+
+{% highlight sh %}
+rails new railsgirls
+{% endhighlight %}
+
+**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 2](http://www.sublimetext.com/2)
+
+Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
+
+<hr />
+
+## <a name="instrukcja_dla_os_x"> Instrukcja dla OS X </a>
 
 **Krok 1.** Na początek sprawdźmy wersję systemu operacyjnego.
 
@@ -100,28 +121,6 @@ rbenv global 2.1.0
 
 {% highlight sh %}
 gem install rails
-{% endhighlight %}
-
-**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 2](http://www.sublimetext.com/2)
-
-Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
-
-<hr />
-
-## <a name="instrukcja_dla_windowsa"> Instrukcja dla Windowsa </a>
-
-Pobierz [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) i uruchom. Przejdź kolejne kroki instalatora z domyślnymi ustawieniami.
-
-Jeśli zainstalowana wersja Rails nie jest najowsza, uruchom *Command Prompt with Ruby on Rails* i wpisz poniższe polecenie.
-
-{% highlight sh %}
-gem update rails --no-ri --no-rdoc
-{% endhighlight %}
-
-Upewnij się, że wszystko działa w porządku uruchamiając następujące polecenie.
-
-{% highlight sh %}
-rails new railsgirls
 {% endhighlight %}
 
 **Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 2](http://www.sublimetext.com/2)
