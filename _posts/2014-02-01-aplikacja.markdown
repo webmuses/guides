@@ -19,55 +19,57 @@ permalink: aplikacja
 
 <h3>Edytor tekstu</h3>
 
-<p><a href="http://www.sublimetext.com/2">Sublime Text 2</a>, <a href="http://komodoide.com/komodo-edit">Komodo Edit</a>, Vim, Emacs lub Gedit są przykładami edytorów tekstowych, w których możesz pisać i edytować kod.</p>
+<p><a href="http://www.sublimetext.com/2">Sublime Text 2</a>, <a href="http://komodoide.com/komodo-edit">Komodo Edit</a>, Vim, Emacs lub Gedit to przykładowe edytory tekstu, w których możesz pisać i edytować kod.</p>
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
-<h3>Terminal (w systemie Windows zwany Wierszem polecenia)</h3>
+<h3>Terminal (w systemie Windows zwany Wierszem poleceń lub Konsolą)</h3>
 
-Program, w którym uruchomisz rails server i wykonasz polecenia.
+Program, w którym wykonasz polecenia i uruchomisz serwer.
 
 <h3><i class="icon-browser">&nbsp;</i></h3>
 
 <h3>Przeglądarka internetowa</h3>
-Firefox, Safari, Chrome lub inna będzie nam służyć do obejrzenia Twojej aplikacji.
+Firefox, Safari, Chrome lub inna. Będzie służyła do oglądania i testowania Twojej aplikacji.
 
 </div>
 
 ## *1.*Tworzenie aplikacji
 
-Stworzymy teraz nową aplikację w Railsach, która będzie się nazywać *railsgirls*.
+Stworzymy nową aplikację w Railsach, która będzie się nazywać *railsgirls*.
 
-Najpierw otwórzmy terminal:
+Najpierw otwórz terminal/konsolę/wiersz poleceń:
 
-* Mac OS X: Otwórz Spotlight, wpisz *Terminal*, a następnie kliknij na aplikację *Terminal*.
 * Windows: Naciśnij przycisk Start i wyszukaj *Command Prompt*, następnie wybierz *Command Prompt with Ruby on Rails*.
+* Mac OS X: Otwórz Spotlight, wpisz *Terminal*, a następnie kliknij na aplikację *Terminal*.
 * Linux (Ubuntu/Fedora): Wyszukaj *Terminal* przy pomocy Dasha, następnie kliknij na *Terminal*.
 
-Wpisz następujące polecenie w terminalu:
+Wpisz następujące polecenie:
 
 {% highlight sh %}
 mkdir projects
 {% endhighlight %}
 
-Aby sprawdzić czy katalog o nazwie <code>projects</code> został utworzony, wykonaj polecenie: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdźmy do folderu <code>projects</code> za pomocą polecenia:
+Aby sprawdzić czy katalog o nazwie <code>projects</code> został utworzony użyj polecenia: <code>ls</code>. Na liście katalogów powinnaś zobaczyć nazwę <code>projects</code>. Przejdźmy do folderu <code>projects</code> wpisując:
 
 {% highlight sh %}
 cd projects
 {% endhighlight %}
 
-Możesz teraz upewnić się, że znajdujesz się w pustym folderze/katalogu poprzez ponowne użycie polecenia <code>ls</code>. Następnie stwórzmy nową aplikację, którą nazwiemy <code>railsgirls</code>. W tym celu wpisz:
+Używając ponownie polecenia <code>ls</code> możesz się upewnić, że znajdujesz się teraz w pustym folderze.
+
+Stworzymy nową aplikację, którą nazwiemy <code>railsgirls</code>. Wpisz:
 {% highlight sh %}
 rails new railsgirls
 {% endhighlight %}
 
-W ten sposób utworzy się nowa aplikacja wewnątrz folderu <code>railsgirls</code>. Musimy więc ponownie zmienić folder, aby znaleźć się wewnątrz naszej aplikacji:
+W ten sposób utworzy się nowa aplikacja wewnątrz katalogu <code>railsgirls</code>. By znaleźć się we wnętrzu naszej aplikacji musisz ponownie zmienić folder:
 
 {% highlight sh %}
 cd railsgirls
 {% endhighlight %}
 
-Jeżeli wpiszesz teraz <code>ls</code> wewnątrz katalogu, powinnaś zobaczyć foldery o nazwach <code>app</code> i <code>config</code>. Wtedy możesz włączyć serwer rails przy użyciu poleceń:
+Po wpisaniu komendy <code>ls</code> powinnaś teraz zobaczyć foldery o nazwach <code>app</code> i <code>config</code>... Jeżeli wszystko poszło OK, możesz teraz zobaczyć jak wygląda Twoja strona. W tym celu uruchom serwer rails:
 
 <div>
 {% highlight sh %}
@@ -75,22 +77,11 @@ rails server
 {% endhighlight %}
 </div>
 
-Otwórz [http://localhost:3000](http://localhost:3000) w swojej przeglądarce. Powinnaś zobaczyć tam stronę "Welcome aboard". Jeśli ją widzisz, oznacza to, że Twoja aplikacja została poprawnie wygenerowana.
+Otwórz [http://localhost:3000](http://localhost:3000) w swojej przeglądarce. Powinnaś zobaczyć stronę "Welcome aboard". Jeśli ją widzisz, oznacza to, że Twoja aplikacja została poprawnie wygenerowana. Brawo!
 
-Zauważ, że w tym oknie Wiersz Poleceń jest niewidoczny, poniewasz znajdujesz się teraz na serwerze Rails. Wiersz poleceń powinien wyglądać teraz w ten sposób:
-
-<div>
-{% highlight sh %}
-$
-{% endhighlight %}
-</div>
-
-Kiedy wiersz poleceń jest niewidoczny nie możesz wykonywać nowych poleceń. Jeżeli spróbujesz teraz wpisać `cd` lub jakieś inne polecenie - nie zadziała. Aby powrócić do normalnego wiersza poleceń:
-
-Naciśnij `CTRL-C` w terminalu aby wyłączyć serwer.
+Po powrocie do okienka z wierszem poleceń (konsolą/terminalem) spróbuj ponownie wpisać komendę <code>ls</code>. Ups, nie zadziałało. Dzieje się tak dlatego, że serwer rails jest ciągle włączony i nie możesz wydawać żadnych innych poleceń. Naciśnij `CTRL-C` (w oknie wiersza poleceń) aby wyłączyć serwer.
 
 **Coach:** Wyjaśnij co robią poszczególne polecenia. Co zostało wygenerowane? Za co odpowiada serwer?
-
 
 ## *2.*Scaffold
 
