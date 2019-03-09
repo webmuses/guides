@@ -19,7 +19,7 @@ Podążaj za instrukcją odpowiednią dla Twojego systemu operacyjnego. Jeśli n
 
 ## <a name="instrukcja_dla_windowsa"> Instrukcja dla Windowsa </a>
 
-Pobierz [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) i uruchom. Przejdź kolejne kroki instalatora z domyślnymi ustawieniami.
+Pobierz [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.4.0.exe) i uruchom. Przejdź kolejne kroki instalatora z domyślnymi ustawieniami.
 
 Jeśli zainstalowana wersja Rails nie jest najowsza, uruchom *Command Prompt with Ruby on Rails* i wpisz poniższe polecenie.
 
