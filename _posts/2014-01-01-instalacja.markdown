@@ -123,7 +123,7 @@ rbenv global 2.1.0
 gem install rails
 {% endhighlight %}
 
-**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 2](http://www.sublimetext.com/2)
+**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 3](https://www.sublimetext.com/3)
 
 Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
 
@@ -151,7 +151,7 @@ Upewnij się, że wszystko działa w porządku uruchamiając następujące polec
 rails new railsgirls
 {% endhighlight %}
 
-**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 3](http://www.sublimetext.com/3)
+**Ostatni krok.** Pobierz i zainstaluj edytor tekstu [Sublime Text 3](https://www.sublimetext.com/3)
 
 Twoje środowisko do pracy z Ruby on Rails jest przygotowane. Gratulacje!
 

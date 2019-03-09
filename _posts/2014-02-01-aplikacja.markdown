@@ -19,7 +19,7 @@ permalink: aplikacja
 
 <h3>Edytor tekstu</h3>
 
-<p><a href="http://www.sublimetext.com/2">Sublime Text 2</a>, <a href="http://komodoide.com/komodo-edit">Komodo Edit</a>, Vim, Emacs lub Gedit to przykładowe edytory tekstu, w których możesz pisać i edytować kod.</p>
+<p><a href="https://www.sublimetext.com/3">Sublime Text 3</a>, <a href="https://code.visualstudio.com">Visual Studio Code</a>, Vim, Emacs lub Gedit to przykładowe edytory tekstu, w których możesz pisać i edytować kod.</p>
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
